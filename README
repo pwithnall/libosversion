@@ -1,0 +1,43 @@
+libosversion
+============
+
+libosversion is a self-contained library to retrieve identifying information
+about the current operating system. It currently supports:
+ • Linux
+ • Darwin
+ • iOS
+ • Windows
+ • Android
+
+It retrieves basic identifying information suitable for logging statistics about
+deployment numbers and device compatibility. It is not intended to be a
+comprehensive solution for accessing all identifying information about an OS or
+its user.
+
+It does not implement any privacy measures — the library is just a way of
+accessing identifying information. It is up to the application developer to
+treat this information with the diligence and respect to privacy that it
+deserves.
+
+It is a mostly-unsupported code dump at the moment, with no build system, tests,
+documentation or release infrastructure. If you want to use it, please get in
+touch <philip.withnall@collabora.co.uk> and we can get the ball rolling on
+adding some of that infrastructure.
+
+libosversion’s API is terrible, and is subject to wild changes in the future.
+
+Dependencies
+============
+
+ • glib-2.0 ≥ 2.38.0
+ • Various OS-specific system libraries
+
+Licensing
+=========
+
+libosversion is licensed under the LGPL; see COPYING for more details.
+
+Contact
+=======
+
+Philip Withnall <philip.withnall@collabora.co.uk>
